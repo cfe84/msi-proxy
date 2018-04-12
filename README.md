@@ -7,7 +7,8 @@ run it locally.
 
 Well, fear no more Giusepe, 'cause I got you covered!
 
-This is a function acting like an MSI proxy. You deploy the
+This is a function acting like a proxy for Managed Service Identity
+authentication. **It should never be used in production**. You deploy the
 function, configure MSI and the resource you want to access,
 then define environment variables on your local environment
 to point to it, then it acts like if it were running on Azure.
