@@ -18,7 +18,7 @@
       },
       "MSIPROXY_SECRET": {
         "type": "string",
-        "defaultValue": "master"
+        "defaultValue": "PUT A RANDOM STRING HERE"
       }
     },
     "variables": {
