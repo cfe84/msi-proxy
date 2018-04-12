@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "MSI_ENDPOINT": "http://localhost:8080/MSI/token",
+    "MSI_SECRET": "this_is_a_secret",
+    "MSIPROXY_SECRET": "this_is_a_super_secret"
+  }
+}
