@@ -17,12 +17,11 @@
         "defaultValue": "master"
       },
       "MSIPROXY_SECRET": {
-        "type": "string",
-        "defaultValue": "PUT A RANDOM STRING HERE"
+        "type": "string"
       }
     },
     "variables": {
-      "storageAccountName": "[toLower(parameters('siteName'))]",
+      "storageAccountName": "[toLower(replace(parameters('siteName'), '-', ''))]",
       "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]"
     },
     "resources":[
