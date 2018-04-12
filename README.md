@@ -21,6 +21,8 @@ completely miss the point of MSI. Don't do it on prod. Please. Don't.
 
 ## Usage
 
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 1. Deploy the function on Azure, turn MSI on.
 2. Add an environment variable to your function called `MSIPROXY_SECRET`.
    This will be the secret your function will check for when receiving
