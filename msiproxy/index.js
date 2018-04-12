@@ -54,8 +54,11 @@ module.exports = function (context, req) {
                 let data = "";
                 res.on("data", (chunk) => data += chunk);
                 res.on("end", () => {
+                    data = JSON.parse(data); // for some reason the function framework is trying to
+                                             // serialize that, so we need to deserialize it first...
                     resolve({
                         status: res.statusCode,
+                        headers: res.headers,
                         body: data
                     });
                 });
