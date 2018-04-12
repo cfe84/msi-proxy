@@ -34,3 +34,4 @@ completely miss the point of MSI. Don't do it on prod. Please. Don't.
     - `MSI_ENDPOINT`, to point to your function (e.g.: 
       `https://coolfuncs.azurewebsites.net/api/msiproxy`)
     - `MSI_SECRET`, to whatever you've set the `MSIPROXY_SECRET` to.
+5. Use MSI as if deployed on Azure
